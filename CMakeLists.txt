@@ -8,7 +8,7 @@ option(BUILD_EXAMPLES "Build examples" OFF)
 project(print)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/source/print.cpp)�ки
+add_library(print STATIC ${CMAKE_CURRENT_SOURCE_DIR}/source/print.cpp)
 
 add_executable(demo ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp)
 target_link_libraries(demo print) 
